@@ -15,6 +15,11 @@ library(docopt)
 opt <- docopt(doc)
 print(opt)
 print(typeof(opt))
-print(opt["<arg4>"])
-print(docopt)
-print(typeof(docopt))
+
+main <- function(opt){
+	print(opt["<arg4>"])
+	print(docopt)
+	print(typeof(docopt))
+}
+
+main(opt)
